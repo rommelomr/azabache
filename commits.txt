@@ -1,3 +1,9 @@
+commit 1fcffaf6560aefc55ba238d9146df61f95e4ef4b
+Author: Rommel Montoya <rommelmontoya97@gmail.com>
+Date:   Tue Dec 18 12:19:26 2018 -0400
+
+    Con commits.log
+
 commit 58ac8aa03074a2d67297d5324b0754c621f2dd3d
 Author: Rommel Montoya <rommelmontoya97@gmail.com>
 Date:   Mon Dec 17 20:51:55 2018 -0400
