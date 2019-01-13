@@ -1,0 +1,79 @@
+	*{
+		font-family:'re';		
+	}
+	.font-re{
+
+		font-family:'re';
+	}
+	.font-re2{
+
+		font-family: 'Comic Sans MS';
+	}
+
+	@font-face {
+		font-family:'re';
+		src: url('Rounded_Elegance.woff') format('woff');
+	}
+	.poligono{
+		fill:transparent;
+		stroke:white;
+		stroke-width:10px;
+	}
+	.barras-boton{
+		fill:grey;
+		stroke:grey;
+		stroke-width:3px;
+
+	}
+
+	#lienzo{
+		position: relative;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	.formulario:focus + label{
+		color:black;
+	}
+	.formulario:focus{
+		/*
+		border-bottom:1px solid red;
+		*/
+		border-color: blue;
+    outline: 0;
+	}
+
+	#container-menu{
+		margin-top: 1%;
+		position:fixed;
+		z-index: 99;
+		display:none;
+	}
+
+	#opciones-menu{
+		display: none;
+	}
+	.menu{
+		z-index: 99;
+		float:right;
+	}
+	.botones-menu{
+		margin-top: 1%;
+		padding:3%;
+		color:white;
+	}
+	.boton-hidden{
+		display:none;
+	}
+	.contenido{
+		display:none;
+	}
+	.poligono-intro{
+		display: none;
+		fill:white;
+	}
+	.contenedor-poligono{
+		display:none;
+	}

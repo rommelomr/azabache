@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>asdfasdf</title>
+		<meta charset="utf-8">
+
+</head>
+
+	
+	<link href="MDB/css/bootstrap-material-design.css" rel="stylesheet">
+
+	<script src="polyfill/polyfill.min.js"></script>
+	<script src="jquery/jquery.min.js"></script>
+
+	<script src="popper/Popper.js"></script>
+	
+	<script src="MDB/js/bootstrap-material-design.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="estilos/general.css">
+	<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+<style>
+	*{
+		font-family:r-e;
+	}
+	@font-face {
+		font-family: 'r-e';
+		src: url('Rounded_Elegance.ttf') format('ttf'),
+		font-weight: normal;
+		font-style: normal;
+	}
+	.poligono{
+		fill:transparent;
+		stroke:white;
+		stroke-width:10px;
+	}
+	.boton_logo{
+		fill:grey;
+		stroke:grey;
+		stroke-bottom:red;
+		stroke-width:3px;
+
+	}
+	.texto_boton{
+	}
+	.contenedor{
+		/*
+		fill:url(#grad);
+		*/
+		display: none;
+		fill:lightgrey;
+		stroke-width:3px;
+
+	}	
+	.contenido{
+		/*
+		*/
+		display: none;
+	}
+	#lienzo{
+		position: relative;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	#exampleInputEmail1:focus + label{
+		color:black;
+	}
+	#exampleInputEmail1:focus{
+		/*
+		border-bottom:1px solid red;
+		*/
+		border-color: blue;
+    outline: 0;
+	}
+
+	#container-menu{
+		margin-top: 1%;
+		position:fixed;
+	}
+
+	#opciones-menu{
+		display: none;
+	}
+	.menu{
+		float:right;
+	}
+	.boton-menu{
+		padding:1.5%;
+		color:white;
+	}
+</style>
+
+<body style="background:black">
+	<div id="contenedor_video" class="col-12" style="display:none;margin:0;padding:0;margin-top:1vh";>
+		<video id="video" class="col-12" style="margin:0;padding:0" controls></video>
+		<center>
+			<button id="boton_regresar" class="btn btn-dark btn-raised">Regresar</button>
+		</center>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" id="container-menu">
+				<div id="menu">
+					
+					<a id="imagen-logo" href="#" id="boton-logo-menu"><img id="logo_menu" src="LOGO .png" class="menu img-fluid" width="100vw"></a>
+					<div id="opciones-menu">
+						<a id="boton-opinion" class="btn btn-light menu a_formulario boton boton-menu" href="#">Danos tu opinión</a>
+						<a id="boton-quienes-somos" class="btn btn-light menu a_video boton boton-menu" href="#" video="bruno">Servicios</a>
+						<a id="boton-quienes-somos" class="btn btn-light menu a_video boton boton-menu" href="#" video="bruno">Quiénes Somos</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+
+			<div id="contenedor_formulario" class="col-md-8" style="display:none;margin-top:5%;"> 
+				<div class="card col-md-12">
+					
+					<form action="">
+							<div class="form-group">
+								<div class="form-group">
+									
+									<textarea class="form-control" name="" id="exampleInputEmail1" cols="30" rows="10"></textarea>
+									<label for="exampleInputEmail1" class="bmd-label-floating">Danos tu opinion</label>
+				    					
+								</div>
+							</div>
+							<center>
+								<button class="btn btn-dark btn-raised">enviar</button>
+							</center>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<div class="row justify-content-center" style="margin-top:5%;">
+			<div id="contenedor_lienzo" class="col-md-12">
+				<svg id="lienzo" viewBox="0 0 843 560" width="120vh" height="85vh" preserveAspectRatio="none">
+					<!--Figura 1-->
+					<g>
+						<polygon id="uno" class="poligono" points="6,84 305,6 438,361 84,518 6,84">
+						</polygon>
+
+		  				<a href="#">
+		  					<polygon id="boton_1" boton_poligono="uno" class="boton boton_logo" points="9,86 304,9 322,57 18,139 9,86">
+		  					</polygon>
+							<text class="texto texto_boton" texto_boton="uno" transform="rotate(-15)" fill="white" font-size="35" x="55" y="128">
+								Animación
+							</text>
+		  				</a>
+
+
+						<text class="texto texto_boton" texto_boton="uno" transform="rotate(-23)" fill="white" font-size="35" x="-3" y="490">Edición</text>
+						<a href="#"><polygon id="boton_2" boton_poligono="uno" boton_poligono="uno" class="boton boton_logo" points="76,460 416,309 435,360 86,515 76,460"></polygon></a>
+						
+						<polygon id="contenedor_1" class="contenedor" points="21,139 320,59 414,309 77,458 21,139"></polygon>	
+						<text id="contenido_1" class="texto contenido contenido_1" transform="rotate(-16)" fill="white" font-size="20" x="-3" y="350">
+							<tspan x="16" y="190">- En 2D</tspan>
+							<tspan x="166" y="190">- De logo</tspan>
+							<tspan x="16" y="220">- De mapas</tspan>
+							<tspan x="166" y="220">- De texto</tspan>
+							<tspan x="16" y="250">- Modelado de animación</tspan>
+							<tspan x="16" y="280">- Modelado de personajes</tspan>
+							<tspan x="16" y="310">- Spot publicitario</tspan>
+							<tspan x="16" y="340">- Video corporativo</tspan>
+							<tspan x="16" y="370">- Video explicativo</tspan>
+							<tspan x="16" y="400">- Video lyrics</tspan>
+
+							<!--tspan x="200" y="372" font-size="20"> <a href="#" id="demo_1" class="texto contenido contenido_1 a_video demo" video="patd">Ver demo</a></tspan-->
+							
+						</text>
+						
+						<text id="demo_1" class="texto contenido contenido_1 a_video demo" transform="rotate(-21)" fill="white" font-size="20" x="170" y="405" video="patd"><a href="#">Ver Demo</a></text>
+
+						<polygon id="contenedor_2" class="contenedor" points="21,139 320,59 414,309 77,458 21,139"></polygon>	
+						<text id="contenido_2" class="texto contenido contenido_2" transform="rotate(-16)" fill="white" font-size="18" x="-3" y="350">
+							<tspan x="0" y="190">- Intro</tspan>
+							<tspan x="150" y="190">- Outro</tspan>
+							<tspan x="0" y="210">- Teaser</tspan>
+							<tspan x="150" y="210">- Títulos</tspan>
+							<tspan x="0" y="230">- Bodas</tspan>
+							<tspan x="150" y="230">- Youtube</tspan>
+							<tspan x="0" y="250">- Vídeo Vlog</tspan>
+							<tspan x="150" y="250">- Trailers</tspan>
+							<tspan x="0" y="270">- Micro vídeos</tspan>
+							<tspan x="150" y="270">- Subtítulos</tspan>
+							<tspan x="0" y="290">- Demo Reel</tspan>
+							<tspan x="150" y="290">- Vídeo Clips</tspan>
+							<tspan x="0" y="310">- Vídeo Cursos</tspan>
+							<tspan x="150" y="310">- Vídeo Clips</tspan>
+							<tspan x="0" y="330">- Vídeo Portadas</tspan>
+							<tspan x="150" y="330">- Vídeo Producto</tspan>
+							<tspan x="0" y="350">- Documentales</tspan>
+							<tspan x="150" y="350">- Cortometrajes</tspan>
+							<tspan x="0" y="370">- Comerciales</tspan>
+							<tspan x="150" y="370">- Colorización</tspan>
+							<tspan x="0" y="390">- Perforación de Chroma Key</tspan>
+
+
+							<!--tspan x="200" y="372" font-size="20"> <a href="#" id="demo_1" class="texto contenido contenido_1 a_video demo" video="patd">Ver demo</a></tspan-->
+
+						</text>
+						<text id="demo_2" video="patd" class="texto contenido contenido_2 a_video demo" transform="rotate(-22)" fill="white" font-size="20" x="-50" y="434"><a href="#">Ver Demo</a></text>
+					</g>
+
+					<!--Figura 2-->
+
+
+					<polygon  id="dos" class="poligono" points="317,10 596,127 647,518 447,359 317,10"></polygon>
+
+					<text class="texto texto_boton" transform="rotate(22)" fill="white" font-size="32" x="360" y="-77">Programación</text>
+					<a href="#"><polygon id="boton_3" boton_poligono="3" class="boton boton_logo dos" points="323,16 593,129 599,171 340,63 323,16"></polygon></a>
+
+					<text class="texto texto_boton"  transform="rotate(38)" fill="white" font-size="27" x="712" y="0">Diseño</text>
+					<a href="#"><polygon id="boton_4" boton_poligono="4" class="boton boton_logo dos" points="526,419 632,419 644,512 526,419"></polygon></a>
+
+					
+					<polygon id="contenedor_3" class="contenedor" points="343,66 596,171 629,418 528,418 451,356 343,66"></polygon>	
+
+					<text id="contenido_3" class="texto contenido contenido_3"  fill="white" font-size="30" x="420" y="250">Contenido 3</text>
+					<text id="demo_3" class="texto contenido contenido_3 a_video demo"  fill="white" font-size="25" x="460" y="320" video="patd"><a href="#">Ver Demo</a></text>
+
+					<polygon id="contenedor_4" class="contenedor" points="343,66 596,171 629,418 528,418 451,356 343,66"></polygon>	
+
+					<text id="contenido_4" class="texto contenido contenido_4"  fill="white" font-size="30" x="420" y="250">Contenido 4</text>
+					<text id="demo_4" class="texto contenido contenido_4 a_video demo"  fill="white" font-size="25" x="460" y="320" video="patd"><a href="#">Ver Demo</a></text>
+
+					<!--Figura 3-->
+
+					<polygon  id="tres" class="poligono" points="82,529 444,369 639,524 84,529 82,529"></polygon>
+
+					<text class="texto texto_boton"  fill="white" font-size="19" x="410" y="410">Audio</text>
+					<a href="#"><polygon id="boton_5" boton_poligono="5" class="boton boton_logo tres" points="443,372 503,419 340,418 443,372"></polygon></a>
+
+					<text class="texto texto_boton"  fill="white" font-size="21" x="329" y="516">Marketing</text>
+					<a href="#"><polygon id="boton_6" boton_poligono="6" class="boton boton_logo tres" points="175,491 593,491 632,521 95,526 175,491"></polygon></a>
+
+			
+					<polygon id="contenedor_5" class="contenedor" points="342,419 501,420 590,490 181,490 342,419"></polygon>	
+					<text id="contenido_5" class="texto contenido contenido_5"  fill="white" font-size="30" x="320" y="460">Contenido 5</text>
+					<text id="demo_5" class="texto contenido contenido_5 a_video demo"  fill="white" font-size="25" x="430" y="485" video="patd"><a href="#">Ver Demo</a></text>
+					
+					<polygon id="contenedor_6" class="contenedor" points="342,419 501,420 590,490 181,490 342,419"></polygon>	
+					<text id="contenido_6" class="texto contenido contenido_6"  fill="white" font-size="30" x="320" y="460">Contenido 6</text>
+					<text id="demo_6" class="texto contenido contenido_6 a_video demo"  fill="white" font-size="25" x="430" y="485" video="patd"><a href="#">Ver Demo</a></text>
+
+
+					<!--Figura 4-->
+					<polygon  class="poligono" points="606,127 835,83 656,511 606,127"></polygon>
+					
+					<text class="texto texto_boton" transform="rotate(-9)" fill="white" font-size="35" x="610" y="258">Ilustración</text>
+					<a href="#"><polygon id="boton_7" boton_poligono="7" class="boton boton_logo" points="609,130 830,87 809,138 614,171 609,130"></polygon></a>
+						
+					<text class="texto texto_boton" transform="rotate(-67)" fill="white" font-size="18" x="-160" y="795">Redacción</text>
+					<a href="#"><polygon id="boton_8" boton_poligono="8" class="boton boton_logo" points="640,370 713,370 657,503 640,370"></polygon></a>			
+
+					<polygon id="contenedor_7" class="contenedor" points="617,172 805,140 710,368 643,368 617,173"></polygon>	
+					<text id="contenido_7" class="texto contenido contenido_7"  fill="white" font-size="30" x="320" y="460">Contenido 7</text>
+					<text id="demo_7" class="texto contenido contenido_7 a_video demo"  fill="white" font-size="25" x="430" y="485" video="patd"><a href="#">Ver Demo</a></text>
+					
+					<polygon id="contenedor_8" class="contenedor" points="617,172 805,140 710,368 643,368 617,173"></polygon>	
+					<text id="contenido_8" class="texto contenido contenido_8"  fill="white" font-size="30" x="320" y="460">Contenido 8</text>
+					<text id="demo_8" class="texto contenido contenido_8 a_video demo"  fill="white" font-size="25" x="430" y="485" video="patd"><a href="#">Ver Demo</a></text>
+
+				</svg>
+			</div>
+	
+
+		</div>
+	</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+	
+
+	<script>
+		$(function(){
+
+			var display_menu = false; //variable que controlará la visibilidad del menú mosca para el efecto hover con js.
+
+			var boton_id = ''; //variable que guarda el contenedor de mensajes actualmente desplegado
+
+			var contenedor_mensaje = ''; //variable que guardará el contenedor de mensajes que estába abierto antes de que el actual fuera desplegado. Si el contenedor de mensajes clickeado es el mismo que ya estaba abierto (con intención de desaparecerlo), esta variable volverá a ser '';
+
+			var contenedor = 'lienzo'; //variable que guardará el contenedor (de video, formulario o logo) para desaparecer optimamente el que esté desplegado al cambiar de vista.
+			
+			var video_reproduciendo = ''; //variable que guardará el nombre del video que se está reproduciendo. Mientras no haya video en reproducción la variable será '';
+
+			var mivideo = document.getElementById('video');
+			function desaparecer_video(time){
+				var intervalo = 50;
+				$('#contenedor_video').fadeOut(time);
+
+				setTimeout(function(){
+
+					$(mivideo).attr('src','');
+
+				},time+intervalo);
+				video_reproduciendo = '';
+			}
+			function desaparecer_logo(time){
+				var intervalo = 50;
+				//1: Ocultar contenedor de mensajes
+				var wait = time+intervalo;
+				if(contenedor_mensaje!=''){
+
+					$('.contenido_'+contenedor_mensaje).fadeOut(time);
+					$('#contenedor_'+contenedor_mensaje).fadeOut(time);
+				}else{
+					wait = 0;
+
+				}
+
+				//2: Esperar 0.85 segundos y ocultar los botones
+				setTimeout(function(){
+					$('.texto_boton').fadeOut(time);
+					$('.boton_logo').fadeOut(time);
+				},wait);
+
+				//3:esperar 0.85 segundos más y ocultar el lienzo (lo que ocultará el logo completo)
+				setTimeout(function(){
+					$('#contenedor_lienzo').fadeOut(time);
+				},time+intervalo+wait);
+			}
+			function desplegar_video(vid,time){
+				$('#contenedor_video').fadeIn(time);
+				$(mivideo).attr('src',vid+'.mp4');
+
+			}
+			function desplegar_logo(time){
+				var intervalo = 50;
+				setTimeout(function(){
+
+					$('#contenedor_lienzo').fadeIn(time,function(){
+						setTimeout(function(){
+
+							$('.boton').fadeIn(time);
+							$('.texto_boton').fadeIn(time);
+
+							if(contenedor_mensaje!=''){
+								setTimeout(function(){
+									contenedor = 'lienzo';
+									desplegar_contenedor(contenedor_mensaje,800)
+								},850);
+							}
+
+						},intervalo);
+						
+					});
+				//},time+intervalo);
+				},time);
+			}
+			function desaparecer_contenedor(id){
+				
+				$('#contenedor_'+id).fadeIn(800);
+				$('.contenido_'+id).fadeIn(800);
+
+			}
+			function desaparecer_contenedor(id,time){
+				$('#contenedor_'+id).fadeOut(time);
+				$('.contenido_'+id).fadeOut(time);
+			}
+
+			function desplegar_contenedor(id,time){
+					
+				$('#contenedor_'+id).fadeIn(time);
+				$('.contenido_'+id).fadeIn(time);
+
+			}
+
+
+			//Esto es lo que pasará cuando finalice el video
+			mivideo.onended = function(){
+
+				desaparecer_video(1000);
+				setTimeout(function(){
+					desplegar_logo(800);	
+				},1050);
+			}
+
+			var boton_regresar = $('#boton_regresar');
+			boton_regresar.click(function(){
+
+				desaparecer_video(1000);
+				setTimeout(function(){
+
+					desplegar_logo(800);
+				},1050);
+			});
+
+			//Esto es lo que pasará cuando pulsen los botones "ver demo", "danos tu opinion" o "quienes somos"
+			$('.a_video').click(function(){
+
+				var video = $(this).attr('video');
+
+				if(video != video_reproduciendo){
+					if(contenedor == 'lienzo'){
+						desaparecer_logo(800);
+						var wait = 2500;
+					}else if(contenedor == 'video'){
+
+						desaparecer_video(1000);
+						var wait = 1050;					
+
+					}else{
+						$('#contenedor_formulario').fadeOut(800);
+						var wait = 850;
+					}
+					contenedor = 'video';
+					setTimeout(function(){
+						desplegar_video(video,1000);
+						video_reproduciendo = video;
+						mivideo.play();
+					},wait);
+				}
+
+			});
+			$('#boton-opinion').click(function(){
+				//seleccionar video, reproducirlo, y luego desaparecer el logo
+
+				if(contenedor == 'lienzo'){
+
+					desaparecer_logo(800);
+					var wait = 2500;
+
+				}else if(contenedor == 'video'){
+
+					desaparecer_video(1000);
+					var wait = 1050;
+				}
+					setTimeout(function(){
+						contenedor = 'formulario';
+						$('#contenedor_formulario').fadeIn(500);
+						
+					},wait);
+
+				contenedor = 'formulario';
+			});
+
+			$('.boton_logo').click(function(){
+
+				boton_id = $(this).attr('id');
+				boton_id = boton_id[boton_id.length-1];
+				if(contenedor_mensaje == boton_id){
+
+					$('.contenido_'+boton_id).fadeOut(300);
+					$('#contenedor_'+boton_id).fadeOut(300);
+					contenedor_mensaje = '';
+				}else{
+					if(contenedor_mensaje!=''){
+
+						$('#contenedor_'+contenedor_mensaje).fadeOut(300);
+						$('.contenido_'+contenedor_mensaje).fadeOut(300);
+					}
+
+					$('.contenido_'+boton_id).fadeIn(300);
+					$('#contenedor_'+boton_id).fadeIn(300);
+					contenedor_mensaje = boton_id;
+				}
+			});
+			$('#lista_opciones').hover(function(){
+
+				if(!display_menu){
+					$('#opciones').fadeIn(300);
+				}else{
+					$('#opciones').fadeOut(300);
+				}
+					display_menu = !display_menu;
+			});
+			$('#boton-logo-menu').click(function(){
+				if(contenedor == 'video'){
+					desaparecer_video(1000);
+					var wait = 1050;
+				}else if(contenedor == 'formulario'){
+					$('#contenedor_formulario').fadeOut(800);
+					var wait = 850;
+				}
+				contenedor = 'lienzo';
+				setTimeout(function(){
+					desplegar_logo(800);
+				},wait);
+			});
+			$('#menu').hover(function(){
+				var menu = $('#opciones-menu');
+				if(menu.css('display')=='none'){
+					menu.fadeIn(300);
+				}else{
+					menu.fadeOut(300);
+				}
+
+			});
+			$('.poligonoa').hover(function(e){
+				var id_poligono = e.target.id;
+
+				var boton = $("polygon[boton_poligono='"+id_poligono+"']");
+				if(boton.css('display')=='none'){
+
+					$("text[texto_boton='"+id_poligono+"'").fadeIn(300);
+					boton.fadeIn(300);
+				}else{
+
+					$("text[texto_boton='"+id_poligono+"'").fadeOut(300);
+					boton.fadeOut(300);
+				}
+			});
+
+		});
+
+	</script>
+
+</body>
+</html>
