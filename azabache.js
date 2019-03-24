@@ -1,6 +1,7 @@
 $(function(){
 	$('.margen-contenedor').css('margin-top',$('#container-menu').height());
 	//Efecto de entrada:
+
 	
 	/*
 	Función recursiva que hace aparecer los .poligonos-intro del 1 al 4 con intervalos de 0.8 segundos
