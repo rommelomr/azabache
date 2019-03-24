@@ -1,12 +1,22 @@
 	*{
 		font-family:'re';		
 	}
+	#icon-demo-1{
+		transform:translate(310px,230px);
+	}
+	#icon-demo-2{
+		transform:translate(335px,355px);
+	}
+	#icon-demo-3{
+		transform:translate(550px,338px);
+	}
+	#icon-demo-7{
+		transform:translate(680px,320px);
+	}
 	.font-re{
-
 		font-family:'re';
 	}
 	.font-re2{
-
 		font-family: 'Comic Sans MS';
 	}
 
@@ -46,10 +56,9 @@
 	}
 
 	#container-menu{
-		margin-top: 1%;
+		top:0;
 		position:fixed;
 		z-index: 99;
-		display:none;
 	}
 
 	#opciones-menu{
@@ -70,6 +79,16 @@
 	.contenido{
 		display:none;
 	}
+	.fondo{
+		display:none;
+	}
+	.texto{
+		display:none;
+	}
+	.demo{
+		display:none;
+	}
+
 	.poligono-intro{
 		display: none;
 		fill:white;

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Azabache Producciones</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estilos.css">
+	<link href="MDB/css/bootstrap-material-design.css" rel="stylesheet">
+	<link rel="shortcut icon" href="logo.ico" />
+</head>
+	<!--
+	<script src="polyfill/polyfill.min.js"></script>
+	<script src="jquery/jquery.min.js"></script>
+	<script src="popper/Popper.js"></script>
+	<script src="MDB/js/bootstrap-material-design.js"></script>
+	<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+	-->
+	
+
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+	</script>
+
+	<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<body style="background:black;color: white;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" id="container-menu">
+				<select id="idioma" class="form-control col-3">
+					<option selected disabled>Languaje</option>
+					<option value="2">English</option>
+					<option value="1">Spanish</option>
+				</select>
+				<div id="menu">
+					<a id="imagen-logo" href="#" id="boton-logo-menu"><img id="logo_menu" src="logo.png" class="menu img-fluid cambiar-vista" destino="lienzo" width="100vw"></a>
+					<div id="opciones-menu">
+						<a destino="contenedor-formulario" class="btn btn-light menu cambiar-vista botones-menu" href="#">CONTACT US</a>
+						<a destino="contenedor-servicios" class="btn btn-light menu cambiar-vista botones-menu" href="#">SERVICES</a>
+						<a destino="contenedor-video" class="btn btn-light menu cambiar-vista botones-menu" href="#" video="bruno">WHO WE ARE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contenedor-video" class="col-12" style="display:none;margin:0;padding:0;">
+			<video id="video" class="col-12" style="margin:0;padding:0" controls></video>
+			<center>
+				<button class="boton_regresar btn btn-link cambiar-vista" destino="lienzo"><i style="color:white" class="fas fa-chevron-circle-left fa-3x"></i></button>
+			</center>
+		</div>
+		<div id="contenedor-servicios" class="margen-contenedor col-12" style="display:none;margin:0;padding:0;">
+			<div class="row justify-content-center">
+
+				<table id="tabla-servicios" class="table table-dark table-bordered table-striped col-10" style="text-align: center;">
+					<tr>
+						<td>
+							DESIGN
+						</td>
+						<td>
+							MARKETING
+						</td>
+						<td>
+							WEB DEVELOPMENT
+						</td>
+						<td>
+							EDITION
+						</td>
+					</tr>
+					<tr>
+						<td Design>
+							LOGO PLACEMENT<br>
+							BANNER<br>
+							CALENDAR<br>
+							LICENSE<br>
+							FOLDERS<br>
+							FACEBOOK COVER<br>
+							VITRINE DECORATION<br>
+							FASHION DESIGN<br>
+							PRODUCT DESIGN<br>
+							IMAGE EDITION<br>
+							PACKAGING<br>
+							PRINT<br>
+							FLYER<br>
+							INFOGRAPHY<br>
+							INVITATIONS<br>
+							LOGO<br>
+							MARQUEE<br>
+							PENNON<br>
+							PIN<br>
+							ALBUM COVER<br>
+							BOOK COVER<br>
+							SIGN<br>
+							BUSINESS CARD<br>
+							THUMBNAILS<br>
+							FENCE<br>
+							LOGO VECTORIZATION<br>
+						</td>
+						<td Marketing>
+							CONTENT CURATOR<br>
+							SOCIAL MEDIA SEO<br>
+							SOCIAL MEDIA Public Relations<br>
+							SOCIAL MEDIA DEVELOPER<br>
+							SOCIAL MEDIA ANALYST<br>
+							SOCIAL MEDIA STRATEGIST<br>
+							SOCIAL MEDIA MANAGER<br>
+							COMMUNITY MANAGER<br>
+							RECORD MANAGER<br>
+							SOCIAL MEDIA METRICS<br>
+							SOCIAL MEDIA LEGAL<br>
+							SOCIAL MEDIA SECURITY<br>
+						</td>
+						<td WD>
+							WEB DEVELOPMENT <br>
+							ADAPTATION IN WORDPRESS <br>
+							MOBILE APP DEVELOPMENT <br>
+							PHP AND MYSQL WEB SYSTEMS <br>
+							MASTER CODE <br>
+							REPORT IN ACCESS <br>
+							WEB MODIFICATION <br>
+							WEB RELOCATION  <br>
+							LANDING PAGE <br>
+							WEB DESIGN <br>
+						</td>						
+						<td edition>
+							COLORIZATION<br>
+							COMMERCIAL<br>
+							SHORT FILMS<br>
+							DEMO REEL<br>
+							DOCUMENTARIES<br>
+							INTRO<br>
+							OUTRO<br>
+							MICRO VIDEOS<br>
+							CHROMA KEY DRILLING<br>
+							SUBTITLES<br>
+							TEASER<br>
+							TITLES<br>
+							TRAILERS<br>
+							WEDDING<br>
+							VIDEOCLIPS<br>
+							COURSES VIDEOS<br>
+							COVERS VIDEOS<br>
+							PRODUCT VIDEO<br>
+							VLOG VIDEOS<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							REDACTION
+						</td>
+						<td>
+							ANIMATION
+						</td>
+						<td>
+							AUDIO
+						</td>
+						<td>
+							ILUSTRATION
+						</td>
+					</tr>
+					<tr>
+						<td>
+							REDACTION OF ARTICLES<br>
+							REDACTION OF WEB SITES<br>
+							TRANSLATIONS<br>
+							REVISION OF TEXT<br>
+							SOCIAL MEDIA POSTS<br>
+							SUBTITLES<br>
+						</td>
+						<td>
+							2D ANIMATION<br>
+							LOGO ANIMATION<br>
+							MAP ANIMATION<br>
+							TEXT ANIMATION<br>
+							CHARACTERS ANIMATION<br>
+							PUBLICITY SPOT<br>
+							CORPORATE VIDEO<br>
+							EXPLAINER VIDEO<br>
+							LYRICS VIDEO<br>
+
+						</td>
+						<td>
+							DUBBING<br>
+							AUDIO CLEANING<br>
+							LOCUTION<br>
+							PUBLICITY SPOT<br>
+							CORPORATE VIDEO<br>
+							EXPLAINER VIDEO<br>
+						</td>
+						<td>
+							CHARACTERS<br>
+							BACKGROUND<br>
+							FOR KIDS<br>
+							STORYBOARDS<br>
+							POSITIONS<br>
+							EXPRESSIONS<br>
+							FOR LANDING PAGE<br>
+							AVATAR<br>
+
+						</td>
+
+					</tr>
+
+
+				</table>
+			</div>
+			<center>
+				<button class="boton_regresar btn btn-link cambiar-vista" destino="lienzo"><i style="color:white" class="fas fa-chevron-circle-left fa-3x"></i></button>
+			</center>
+		</div>
+		<div id="contenedor-formulario" style="display:none;" class="row justify-content-center margen-contenedor">
+
+			<div class="col-md-8"> 
+				<div class="card col-md-12">
+					
+					<form action="mail.php" method="post">
+						<input hidden name="pag" value="en_US.html">
+						<div class="form-group">
+							<div class="form-group">
+								<input class="form-control formulario" name="nombre" id="nombre" required>
+								<label for="nombre" class="bmd-label-floating">Name</label>
+							</div>
+							<div class="form-group">
+								<input class="form-control formulario" name="correo" id="correo" type="email" required>
+								<label for="correo" class="bmd-label-floating">E-Mail</label>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control formulario" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+								<label for="mensaje" class="bmd-label-floating">Give Us Your Opinion</label>
+							</div>
+						</div>
+						<center>
+							<button class="btn btn-dark btn-raised">Send</button>
+						</center>
+					</form>
+				</div>
+				<center>
+					<button class="boton_regresar btn btn-link cambiar-vista" destino="lienzo"><i style="color:white" class="fas fa-chevron-circle-left fa-3x"></i></button>
+				</center>				
+			</div>
+
+		</div>
+		<div id="contenedor_lienzo" class="row justify-content-center" style="margin-top:5%;">
+			<div class="col-md-12">
+				<svg xmlns="http://www.w3.org/2000/svg" id="lienzo" viewBox="0 0 843 560" width="120vh" height="85vh" preserveAspectRatio="none">
+					<!--Figura 1-->
+					<polygon intro="1" class="poligono-intro" points="22,94 295,21 420,352 95,497 22,94"></polygon>
+					<g class="contenedor-poligono" contenedor="1">
+						<polygon poligono="1" class="poligono" points="6,84 306,6 438,361 84,518 6,84">
+						</polygon>
+		  				<a href="#" id="boton-1" boton-poligono="1" boton="1" class="boton-hidden">
+		  					<polygon class="barras-boton" points="13,88 303,12 311,36 18,115 13,88">
+		  					</polygon>
+							<text class="font-re" transform="rotate(-15)" fill="white" font-size="20" x="46" y="111">
+								A N I M A T I O N
+							</text>
+		  				</a>
+		  				<g id="contenido-1" contenido="1" class="contenido">
+		  					<polygon class="fondo" id="fondo-1" fill="grey" points="17,116 313,36 388,240 53,320 17,117"></polygon>
+							<text class="texto" id="texto-1" transform="rotate(-16)" fill="white" font-size="16">
+								<tspan x="25" y="165">- TEXT</tspan>
+								<tspan x="86" y="165">- PUBLICITY SPOT</tspan>
+								<tspan x="35" y="195">- CORPORATE VIDEO</tspan>
+								<tspan x="49" y="225">- MAPS</tspan>
+								<tspan x="123" y="225">- LOGOS</tspan>
+								<tspan x="48" y="255">- EXPLAINER VIDEO</tspan>
+								<tspan x="69" y="285">- LYRICS VIDEO</tspan>
+							</text>
+							<a class="demo" destino="contenedor-video" href="#" demo-poligono="1" demo="1" id="demo-1" video="patd">
+								<text fill="white" transform="rotate(-16)" font-size="16" x="200" y="310">
+									SEE DEMO
+								</text>
+								<g id="icon-demo-1">
+									<path d="M8 5v14l11-7z" transform="rotate(-16)" fill="white"/>
+								</g>
+							</a>
+		  				</g>
+
+						<a href="#" id="boton-2" boton-poligono="1" boton="2" class="boton-hidden">
+							<polygon class="barras-boton" points="83,479 421,334 430,358 88,509 83,479">
+							</polygon>
+							<text class="font-re" transform="rotate(-24)" fill="white" font-size="20" x="-13" y="497">
+								E D I T I O N
+							</text>
+						</a>
+		  				<g id="contenido-2" contenido="2" class="contenido">
+		  					<polygon id="fondo-2" class="fondo" fill="grey" points="32,203 335,97 422,333 82,479 32,203"></polygon>
+			  				<text id="texto-2" class="texto" transform="rotate(-20)" fill="white" font-size="16">
+								<tspan x="-34" y="238">- COLORIZATION</tspan>
+								<tspan x="113" y="238">- COMMERCIAL</tspan>
+								<tspan x="-17" y="268">- SHORT FILMS</tspan>
+								<tspan x="115" y="268">- DEMO REEL</tspan>
+								<tspan x="-15" y="298">- DOCUMENTARIES</tspan>
+								<tspan x="141" y="298">- TEASER</tspan>
+								<tspan x="-11" y="328">- COVERS VIDEOS</tspan>
+								<tspan x="143" y="328">- TRAILERS</tspan>
+								<tspan x="94" y="358">- VLOGS VIDEOS</tspan>
+								<tspan x="-20" y="358">- VIDEOCLIPS</tspan>
+								<tspan x="85" y="388">- COURSES VIDEOS</tspan>
+								<tspan x="-20" y="388">- SUBTITLES</tspan>
+			  					<tspan x="55" y="418">- WEDDING</tspan>
+
+							</text>
+							<a class="demo" destino="contenedor-video" href="#" demo-poligono="1" demo="2" id="demo-2" video="patd">
+								<text  transform="rotate(-20)" fill="white" font-size="16" x="159" y="445">SEE DEMO</text>
+								<g id="icon-demo-2">
+									<path d="M8 5v14l11-7z" transform="rotate(-22)" fill="white"/>
+								</g>
+							</a>	
+						</g>
+					</g>
+
+					<!--Figura 2-->
+					<polygon intro="2" class="poligono-intro" points="341,34 582,136 630,487 459,351 341,34"></polygon>
+					<g class="contenedor-poligono" contenedor="2">
+						<polygon poligono="2" class="poligono" points="317,9 596,127 649,516 649,519 447,359 317,9"></polygon>
+
+						<a href="#" id="boton-3" boton-poligono="2" boton="3" class="boton-hidden">
+							<polygon class="barras-boton dos" points="327,20 591,131 594,155 339,50 327,20">
+							</polygon>
+							
+							<text class="font-re" transform="rotate(23)" fill="white" font-size="20" x="370" y="-92">
+								W E B
+							</text>
+							<text class="font-re" transform="rotate(23)" fill="white" font-size="20" x="444" y="-92">
+								D E S I G N
+							</text>
+
+						</a>
+		  				<g id="contenido-3" contenido="3" class="contenido">
+		  					<polygon id="fondo-3" class="fondo" fill="grey" points="337,49 595,155 630,425 435,314 337,49"></polygon>
+
+							<text id="texto-3" class="texto" transform="rotate(23)" fill="white" font-size="14">
+							
+								<tspan x="410" y="-49">- LANDING PAGE</tspan>
+								<tspan x="435" y="-24">- MODIFICATION</tspan>
+								<tspan x="460" y="1">- MASTER CODE</tspan>
+								<tspan x="485" y="26">- RELOCATION</tspan>
+								<tspan x="510" y="51">- MOVIL APP</tspan>
+								<tspan x="535" y="76">- WEBSITE</tspan>
+
+
+							</text>
+							<a class="demo" destino="contenedor-video" href="#" demo-poligono="2" demo="3" id="demo-3" video="patd">
+
+								<text transform="rotate(23)" fill="white" font-size="14" x="613" y="99">
+									SEE DEMO
+								</text>
+								<g id="icon-demo-3">
+									<path d="M8 5v14l11-7z" transform="rotate(17)" fill="white"/>
+								</g>
+
+							</a>
+						</g>
+						
+						<a href="#" id="boton-4" boton-poligono="2" boton="4" class="boton-hidden">
+							<polygon class="barras-boton dos" points="440,323 637,473 642,506 452,355 440,323">
+							</polygon>
+							<text class="font-re" transform="rotate(38)" fill="white" font-size="17" x="642" y="0">
+								D E S I G N
+							</text>
+						</a>
+
+		  				<g id="contenido-4" contenido="4" class="contenido">
+		  					<polygon id="fondo-4" class="fondo" fill="grey" points="350,84 599,190 636,473 438,320 350,84"></polygon>
+
+							<text id="texto-4" class="texto" transform="rotate(38)" fill="white" font-size="14">
+								<tspan x="500" y="-155">- BANNER</tspan>
+								<tspan x="400" y="-135">- PACKAGING</tspan>
+								<tspan x="500" y="-135">- CORPORATE IDENTITY</tspan>
+								<tspan x="540" y="-115" >- PRINT</tspan>
+								<tspan x="600" y="-115">- FLYER</tspan>
+								<tspan x="430" y="-115">- INFOGRAPHY</tspan>
+
+								<tspan x="470" y="-95">- THUMBNAILS</tspan>
+								<tspan x="580" y="-95">- SIGN</tspan>
+								<tspan x="490" y="-75">- FACEBOOK COVER</tspan>
+								<tspan x="520" y="-55">- LOGOS</tspan>
+								<tspan x="590" y="-55" >- COVERS</tspan>
+								
+							</text>
+							<a class="demo" destino="contenedor-video" href="#" demo-poligono="2" demo="4" id="demo-4" video="patd">
+								<text fill="white" font-size="16" x="576" y="390">
+									SEE
+								</text>
+								<text fill="white" font-size="16" x="570" y="404">
+									DEMO
+								</text>
+								<g transform="translate(581,400)">
+									<path d="M8 5v14l11-7z" fill="white"/>
+								</g>
+
+							</a>
+						</g>
+		  				
+					</g>
+
+
+					<!--Figura 3-->
+					<polygon intro="3" class="poligono-intro" points="150,515 443,386 601,511 150,515"></polygon>
+					<g class="contenedor-poligono" contenedor="3">
+						<polygon poligono="3" class="poligono" points="82,529 444,368 641,524 84,529 82,529"></polygon>	
+						<a href="#" id="boton-5" boton-poligono="3" boton="5" class="boton-hidden">
+							<polygon class="barras-boton tres" points="443,375 492,414 357,414 443,375">
+							</polygon>
+							<text class="font-re" fill="white" font-size="14" x="389" y="410">
+								REDACTION
+							</text>
+						</a>
+
+						<g id="contenido-5" contenido="5" class="contenido">
+
+							<polygon id="fondo-5" class="fondo"  fill="grey" id="contenedor_5" class="contenedor" points="353,414 493,413 587,488 181,490 353,414"></polygon>	
+							<text id="texto-5" class="texto" transform="rotate(0)" fill="white" font-size="13">
+								<tspan x="370" y="429">- SOCIAL MEDIA</tspan>
+								<tspan x="330" y="443">- ARTICLES</tspan>
+								<tspan x="430" y="443" >- WEBSITES</tspan>
+								<tspan x="298" y="457">- TRANSLATIONS</tspan>
+								<tspan x="433" y="457">- SUBTITLES</tspan>
+								<tspan x="263" y="471">- REVISION OF TEXT</tspan>
+								
+
+							</text>
+							<a class="demo" destino="contenedor-video" href="#" demo-poligono="3" demo="5" id="demo-5" video="patd">
+								<text class="font-re" fill="white" font-size="18" x="430" y="481">
+									SEE DEMO
+								</text>
+								<g transform="translate(525,461)">
+									<path d="M8 5v14l11-7z" fill="white"/>
+								</g>
+							</a>	
+						</g>
+
+						<a href="#" id="boton-6" boton-poligono="3" boton="6" class="boton-hidden">
+							<polygon class="barras-boton tres" points="159,502 598,498 627,521 101,526 159,502">
+							</polygon>
+							<text class="font-re" fill="white" font-size="18" x="303" y="519">
+								I L U S T R A T I O N
+							</text>
+						</a>
+
+						<g id="contenido-6" contenido="6" class="contenido">
+							<polygon id="fondo-6" class="fondo"  fill="grey" id="contenedor_5" class="contenedor" points="274,449 538,449 600,498 155,502 274,449"></polygon>	
+							<text id="texto-6" class="texto" transform="rotate(0)" fill="white" font-size="15">
+								<tspan x="296" y="470">- STORYBOARDS</tspan>
+								<tspan x="430" y="470">- CHARACTERS</tspan>
+								<tspan x="220" y="490">- BACKGROUND</tspan>
+								<tspan x="350" y="490">- AVATAR</tspan>
+
+							</text>
+							<a class="demo" destino="contenedor-video" href="#" demo-poligono="3" demo="6" id="demo-6" video="patd">
+								<text  fill="white" font-size="18" x="430" y="493">
+									SEE DEMO
+								</text>
+								<g transform="translate(525,474)">
+									<path d="M8 5v14l11-7z" fill="white"/>
+								</g>
+							</a>
+						</g>
+					</g>
+
+					<!--Figura 4-->
+					<polygon intro="4" class="poligono-intro" points="624,138 811,102 663,460 624,138"></polygon>
+					<g class="contenedor-poligono" contenedor="4">
+						<polygon poligono="4" class="poligono" points="605,127 835,83 657,511 605,127"></polygon>
+						
+						<a href="#" id="boton-7" boton-poligono="4" boton="7" class="boton-hidden">
+							<polygon class="barras-boton" points="612,132 826,91 815,116 615,153 612,132">
+							</polygon>
+							<text transform="rotate(-10)" fill="white" font-size="20" x="599" y="254">
+								M A R K E T I N G
+							</text>
+						</a>
+							
+						<g id="contenido-7" contenido="7" class="contenido">
+							<polygon id="fondo-7" class="fondo"  fill="grey" points="613,154 817,116 718,349 639,349 613,154"></polygon>
+							<text id="texto-7" class="texto" transform="rotate(-9)" fill="white" font-size="10">
+								<tspan x="585" y="265">- SOCIAL MEDIA DEVELOPER</tspan>
+								<tspan x="585" y="285">- SOCIAL MEDIA MANAGER</tspan>
+								<tspan x="585" y="305">- COMMUNITY MANAGER</tspan>
+								<tspan x="585" y="325">- SOCIAL MEDIA STRATEGIST</tspan>
+								<tspan x="585" y="345">- SOCIAL MEDIA METRICS</tspan>
+								<tspan x="585" y="365">- SOCIAL MEDIA ANALYST</tspan>
+								<tspan x="585" y="385">- SOCIAL MEDIA SEO</tspan>
+
+							</text>
+							<a class="demo" destino="contenedor-video" href="#" demo-poligono="4" demo="7" id="demo-7" video="patd">	<g id="icon-demo-7">
+								<path transform="rotate(-9)"d="M8 5v14l11-7z" fill="white"/>
+								</g>		
+								<text transform="rotate(-9)" fill="white" font-size="12" x="600" y="420">
+									SEE DEMO
+								</text>
+							</a>
+						</g>
+						<a href="#" id="boton-8" boton-poligono="4" boton="8" class="boton-hidden">
+							<polygon class="barras-boton" points="644,370 709,370 660,491 644,370"></polygon>
+							<text transform="rotate(0)" fill="white" font-size="17" x="645" y="384">
+								SOUND
+							</text>
+						</a>
+						<g id="contenido-8" contenido="8" class="contenido">
+							<polygon id="fondo-8" class="fondo"  fill="grey" points="619,200 780,200 710,369 642,369 619,200"></polygon>
+							<text id="texto-8" class="texto" fill="white" font-size="13">
+								<tspan x="630" y="225">- AUDIO CLEANING</tspan>
+								<tspan x="632" y="245">- PUBLICITY SPOT</tspan>
+								<tspan x="635" y="265">- LOCUTION</tspan>
+								<tspan x="638" y="285">- DUBBING</tspan>
+							</text>
+							<a class="demo" destino="contenedor-video" href="#" demo-poligono="4" demo="8" id="demo-8" video="patd">
+								<g transform="translate(672,341)">
+								<path d="M8 5v14l11-7z" fill="white"/>
+								</g>
+								<text fill="white" font-size="11" x="654" y="340">
+									SEE DEMO
+								</text>
+							</a>	
+						</g>
+					</g>
+
+				</svg>
+			</div>
+	
+
+		</div>
+	</div>
+
+<script src="azabache.js"></script>
+</body>
+</html>

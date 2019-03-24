@@ -1,4 +1,5 @@
 $(function(){
+	$('.margen-contenedor').css('margin-top',$('#container-menu').height());
 	//Efecto de entrada:
 	
 	/*
@@ -47,6 +48,7 @@ $(function(){
 		//Al pasar el mouse por encima de un polígono identificamos cual es (1,2,3, o 4)
 		var poligono = $(this).attr('contenedor');
 
+
 		//Si los botones no están desplegados:
 		if (boton_desplegado===false){
 
@@ -61,16 +63,23 @@ $(function(){
 			//se ocultarán apenas el mouse deje de estar encima del polígono
 			$("a[boton-poligono='"+poligono+"']").fadeOut(400);
 
-			//si hay un link ver demo desplegado:
+			//si hay contenido desplegado:
 			if(contenido_desplegado!=false){
-			
 				//se ocultará al quitar el mouse de encima del polígono
-				$("g[contenido='"+contenido_desplegado+"']").fadeOut(400);
-				contenido_desplegado = false;
+				$("g[contenido='"+contenido_desplegado+"']").fadeOut(400,function(){
+				
+					
+					$('#fondo-'+contenido_desplegado).css('display','none');
+					$('#texto-'+contenido_desplegado).css('display','none');
+					$('#demo-'+contenido_desplegado).css('display','none');
+					contenido_desplegado = false;
+				});
+				
 			}
 
 			//Se indicará que no hay botones desplegados
 			boton_desplegado = false;
+			
 		}
 	});
 
@@ -87,13 +96,23 @@ $(function(){
 		if(contenido.css('display')=='none'){
 
 			//se desplegará en 0.4 segundos
-			contenido.fadeIn(400);
+			//alert('fondo-'+boton);
+			contenido.css('display','block');
+			$('#fondo-'+boton).fadeIn(700,function(){
+				$('#texto-'+boton).fadeIn(700,function(){
+
+				});
+				$('#demo-'+boton).fadeIn(700,function(){
+				});
+			});
 
 			//se pregunta si hay un contenido ya desplegado.
 			//En caso de que si lo haya:
 			if(contenido_desplegado!==false){
 				//Se desvanece
-				$("#contenido-"+contenido_desplegado).fadeOut(400);
+				$("#contenido-"+contenido_desplegado).fadeOut(400,function(){
+
+				});
 			}
 			
 			//y se guardará el numero del contenido visible
@@ -102,11 +121,17 @@ $(function(){
 		}else{//si dicho elemento está visible:
 
 			//se ocultará en 0.4 segundos
-			contenido.fadeOut(400);
+			contenido.fadeOut(400,function(){
+
+					$('#fondo-'+boton).css('display','none');
+					$('#texto-'+boton).css('display','none');
+					$('#demo-'+boton).css('display','none');
+			});
 
 			//y se indica que no hay ningun link desplegado
 			contenido_desplegado = false;
 		}
+		
 	});
 
 	//Al pasar el mouse por encima del logo menú
@@ -160,7 +185,13 @@ $(function(){
 				$(mivideo).attr('src','');
 			}
 			setTimeout(function(){
+				//alert(destino);
 				$('#'+destino).fadeIn(600);
+				if(destino=='contenedor-servicios'){
+					$('#container-menu').css('background','black');
+				}else{
+					$('#container-menu').css('background','none');
+				}
 				vista_visible = destino;
 
 			},500);
@@ -171,12 +202,13 @@ $(function(){
 		if(destino.attr('destino')!=vista_visible){
 
 			mostrar_vista(destino);
+
 		}
 
 	});
 	$('.demo').click(function(){
 		var demo =$(this);
-		demo.fadeOut(400,function(){
+		$('#contenido-'+demo.attr('demo')).fadeOut(400,function(){
 			setTimeout(function(){
 
 				$('a[boton-poligono="'+boton_desplegado+'"]').fadeOut(400,function(){
@@ -186,6 +218,14 @@ $(function(){
 				});
 			},500);
 		});
+	});
+	
+	$('#idioma').change(function(){
+		if($(this).val()==2){
+			location.href = 'en_US.html'
+		}else if($(this).val()==1){
+			location.href = '.'
+		}
 	});
 
 
