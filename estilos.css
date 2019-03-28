@@ -1,0 +1,98 @@
+	*{
+		font-family:'re';		
+	}
+	#icon-demo-1{
+		transform:translate(310px,230px);
+	}
+	#icon-demo-2{
+		transform:translate(335px,355px);
+	}
+	#icon-demo-3{
+		transform:translate(550px,338px);
+	}
+	#icon-demo-7{
+		transform:translate(680px,320px);
+	}
+	.font-re{
+		font-family:'re';
+	}
+	.font-re2{
+		font-family: 'Comic Sans MS';
+	}
+
+	@font-face {
+		font-family:'re';
+		src: url('Rounded_Elegance.woff') format('woff');
+	}
+	.poligono{
+		fill:transparent;
+		stroke:white;
+		stroke-width:10px;
+	}
+	.barras-boton{
+		fill:grey;
+		stroke:grey;
+		stroke-width:3px;
+
+	}
+
+	#lienzo{
+		position: relative;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	.formulario:focus + label{
+		color:black;
+	}
+	.formulario:focus{
+		/*
+		border-bottom:1px solid red;
+		*/
+		border-color: blue;
+    outline: 0;
+	}
+
+	#container-menu{
+		top:0;
+		position:fixed;
+		z-index: 99;
+	}
+
+	#opciones-menu{
+		display: none;
+	}
+	.menu{
+		z-index: 99;
+		float:right;
+	}
+	.botones-menu{
+		margin-top: 1%;
+		padding:3%;
+		color:white;
+	}
+	.boton-hidden{
+		display:none;
+	}
+	.contenido{
+		display:none;
+	}
+	.fondo{
+		display:none;
+	}
+	.texto{
+		display:none;
+	}
+	.demo{
+		display:none;
+	}
+
+	.poligono-intro{
+		display: none;
+		fill:white;
+	}
+	.contenedor-poligono{
+		display:none;
+	}
